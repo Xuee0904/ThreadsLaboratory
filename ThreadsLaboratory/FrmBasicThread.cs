@@ -27,4 +27,12 @@ namespace ThreadsLaboratory
         }
  
     }
+
+    public class MyThreadClass
+    {
+        public static void Thread1()
+        {
+
+        }
+    }
 }
