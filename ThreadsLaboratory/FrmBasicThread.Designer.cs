@@ -34,7 +34,6 @@
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -43,6 +42,7 @@
             this.label1.Size = new System.Drawing.Size(277, 28);
             this.label1.TabIndex = 1;
             this.label1.Text = "- Before starting thread -";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // RunButton
             // 
@@ -67,7 +67,6 @@
             this.Text = "BasicThread";
             this.Load += new System.EventHandler(this.FrmBasicThread_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
