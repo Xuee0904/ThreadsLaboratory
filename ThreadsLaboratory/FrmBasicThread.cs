@@ -26,7 +26,21 @@ namespace ThreadsLaboratory
         {
             this.BackColor = ColorTranslator.FromHtml("#BDD7DE");
         }
- 
+
+        private void RunButton_Click(object sender, EventArgs e)
+        {
+            ThreadStart threadStart = new ThreadStart(MyThreadClass.Thread1);
+            Thread ThreadA = new Thread(threadStart);
+            Thread ThreadB = new Thread(threadStart);
+
+            ThreadA.Name = "Thread A";
+            ThreadB.Name = "Thread B";
+
+            Console.WriteLine("-- Before starting thread --");
+
+            ThreadA.Start();
+            ThreadB.Start();
+        }
     }
 
     public class MyThreadClass
